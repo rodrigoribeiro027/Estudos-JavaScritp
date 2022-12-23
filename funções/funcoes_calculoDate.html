@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funcoes_calculoDate</title>
+
+    <script>
+        //15/01/2017
+        var data1 = new Date(2017,0,15)
+        //23/02/2017
+        var data2 = new Date(2017,1,23)
+
+        document.write(data1.toString())
+        document.write('<hr/>')
+        document.write(data2.toString())
+        document.write('<hr/>'+'<br>')
+
+        document.write(data1.getTime())
+        document.write('<hr/>')
+        document.write(data2.getTime())
+        document.write('<hr/>'+'<br>')
+
+        //encontrar a qtdade de milissegundos entre data1 e data2
+        var milesegundosDatas = Math.abs(data1.getTime() - data2.getTime())
+        document.write(milesegundosDatas)
+        //quantos dias esses milisegundos representa 1 dia tem 24, cada hora tem 60 min , cada minuto tem 60segundos,cada segundo tem 1000 milisegundos.
+        //quantos milissegundos tem em um dia
+        document.write('<hr/>'+'<br>')
+        var milisegundosPorDia = (1*24*60*60*1000)
+        document.write('\n1 dia tem: '+ (1*24*60*60*1000) + ' milisegundos')
+        document.write('<br>')
+        document.write('A diferença de Data 1 e Data 2 é: '+Math.ceil(milesegundosDatas / milisegundosPorDia) + ' Dias')
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

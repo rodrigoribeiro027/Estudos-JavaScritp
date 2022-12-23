@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funcoes_Data</title>
+    <script>
+        var data = new Date()
+        //buscar dia mes e ano
+        // document.write(data.getDate() + '/' + (data.getMonth() + 1) +'/'+ data.getFullYear())
+        //23/12/2022
+
+        //adicionar /remover dias da data
+        document.write(data.toString())
+        //setar um valor novo no parametro date
+        data.setDate(data.getDate() + 1) //voce pode diminuir com -1 tambenm
+        document.write("<br>")
+        document.write(data.toString())
+
+
+        document.write("<br>")
+        //adicionar /remover mes 
+        document.write(data.toString())
+        //setar um valor novo no parametro date
+        data.setMonth(data.getMonth() + 1) //voce pode diminuir com -1 tambenm
+        document.write("<br>")
+        document.write(data.toString())
+
+
+        //adicionar /remover mes 
+        document.write(data.toString())
+        //setar um valor novo no parametro date
+        data.setFullYear(data.getFullYear() + 1) //voce pode diminuir com -1 tambenm
+        document.write("<br>")
+        document.write(data.toString())
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
