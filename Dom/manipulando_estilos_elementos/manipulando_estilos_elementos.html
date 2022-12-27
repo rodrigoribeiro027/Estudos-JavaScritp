@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulando_estilos_elementos</title>
+    <script src="./main.js"></script>
+</head>
+<style>
+    .estilo1{
+        background: red;
+        color: #fff;
+    }
+    .estilo2{
+        width: 400px;
+        height: 50px;
+        background-color: #ff0000;
+        text-align: center;
+        font-size: 25px;
+        color: #fff;
+        padding: 25px;
+    }
+</style>
+<body>
+    <h3>Manipulando estilos</h3>
+    <button type="button" onclick="modificaEstilo('#FF0000', '200px')">vermelho</button>  
+    <button type="button" onclick="modificaEstilo('#00FF00','150px', '20px')">verde</button>
+    <button type="button" onclick="modificaEstilo('#0000FF','150px', '200px')">azul</button>
+    <hr>
+    <div style="border: solid 1px #000; width:100px; height: 100px;" id="quadrado">
+    </div>
+    <br>
+    <h1>Modificar Classe de elemento</h1>
+    <div id="mensagem" class="estilo1">modificando a classe</div>
+    <br>
+    <button type="button" onclick="modificaclasse()" class="estilo1" style="background: red;">Aplicar classe</button>
+
+</body>
+</html>

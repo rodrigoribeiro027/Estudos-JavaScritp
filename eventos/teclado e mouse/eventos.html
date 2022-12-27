@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./main.js"></script>
+</head>
+<body>
+        <h1>
+            Eventos capturados do Mouse
+        </h1>
+    <div class="mae">
+        
+        <div onclick="acao()" class="borda">
+        <p>o evento é disparado por click</p></div>
+        <div ondblclick="acao()" class="borda2">
+        <p>o evento é disparado por 2clicks</p></div>
+        <div onmouseup="acao()" class="borda3">
+            <p>
+            o evento é disparado por clickar e so quando soltar o click é disparado
+            </p>
+        </div>
+        <div onmouseover="acao()" class="borda4">
+            <p>
+            o evento é disparado por passar o mause em cima do campo
+            </p>
+        </div>
+        <div onmouseout="acao()" class="borda5">
+            <p>
+                o evento é disparado por deixar a area do elemento sem clikar 
+            </p>
+        </div>
+        <div onclick="acao()" onmouseout="acao2()" class="borda6">
+            <p>onclick e onmouseout 2 eventos em 1 elemento </p>
+        </div>
+    </div>
+    <hr>
+    <h1>
+        Eventos capturados pelo teclado
+    </h1>
+    <div class="mae2">
+        
+        <div >
+            <h5>o evento é acionado e depois o algarismo digitado aparece</h5>
+            <input type="text" onkeydown="input()" name="" id="">
+            <h5>o algarismo digitado aparece e depois o evento é acionado</h5>
+            <input type="text" onkeyup="input()" name="" id="">
+            <h5>so é disparado se tecla representar um caracter por exemplo o ctrl nao representa caracter mas a barra de espaço sim.</h5>
+            <input type="text" onkeypress="input()" name="" id="">
+
+        </div>
+    </div>
+</body>
+</html>

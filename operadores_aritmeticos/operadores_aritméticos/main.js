@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script>
-        
-        // var numero1 = prompt('Digite um numero:')
+ // var numero1 = prompt('Digite um numero:')
         // var numero2 = prompt('Digite outro numero:')
 
         // numero1 = parseInt(numero1)
@@ -36,12 +26,3 @@
         // document.write(teste)
 
         document.write((11 + 5 - 5 * 2) / 2)
-
-    </script>
-</head>
-
-<body>
-
-</body>
-
-</html>
