@@ -6,5 +6,4 @@ while(x <= 10 ){
         break
     }
     x++ //retorno false logo para o while outra forma de pause é colocando uma condição
-
 }
